@@ -1,0 +1,135 @@
+/* style.css */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+    background:#0f172a;
+}
+
+.background{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:linear-gradient(45deg,#0f172a,#1e293b,#334155);
+    animation:bgAnimation 8s infinite alternate;
+}
+
+@keyframes bgAnimation{
+    0%{
+        filter:hue-rotate(0deg);
+    }
+    100%{
+        filter:hue-rotate(90deg);
+    }
+}
+
+.container{
+    position:relative;
+    width:400px;
+    padding:30px;
+    border-radius:20px;
+    background:rgba(255,255,255,0.1);
+    backdrop-filter:blur(12px);
+    box-shadow:0 0 20px rgba(0,0,0,0.4);
+    color:white;
+    animation:fadeIn 1s ease;
+}
+
+@keyframes fadeIn{
+    from{
+        transform:translateY(30px);
+        opacity:0;
+    }
+    to{
+        transform:translateY(0);
+        opacity:1;
+    }
+}
+
+h1{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.password-box{
+    display:flex;
+    margin-bottom:20px;
+}
+
+.password-box input{
+    flex:1;
+    padding:12px;
+    border:none;
+    border-radius:10px 0 0 10px;
+    font-size:16px;
+    outline:none;
+}
+
+.password-box button{
+    padding:12px 18px;
+    border:none;
+    background:#38bdf8;
+    color:white;
+    cursor:pointer;
+    border-radius:0 10px 10px 0;
+    transition:0.3s;
+}
+
+.password-box button:hover{
+    background:#0ea5e9;
+}
+
+.settings{
+    margin-bottom:20px;
+}
+
+.setting{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:10px;
+}
+
+input[type="range"]{
+    width:100%;
+    margin-bottom:15px;
+}
+
+.check{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin:10px 0;
+}
+
+.generate-btn{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:12px;
+    background:#22c55e;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.generate-btn:hover{
+    transform:scale(1.03);
+    background:#16a34a;
+}
+
+#message{
+    text-align:center;
+    margin-top:15px;
+    color:#facc15;
+}
