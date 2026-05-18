@@ -67,7 +67,12 @@ h1{
 }
 
 .password-box input{
-    
+    flex:1;
+    padding:12px;
+    border:none;
+    border-radius:10px 0 0 10px;
+    font-size:15.9px;
+    outline:none;
 }
 
 .password-box button{
