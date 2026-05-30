@@ -113,15 +113,7 @@ input[type="range"]{
 }
 
 .generate-btn{
-    width:100%;
-    padding:14px;
-    border:none;
-    border-radius:12px;
-    background:#22c55e;
-    color:white;
-    font-size:16px;
-    cursor:pointer;
-    transition:0.3s;
+
 }
 
 .generate-btn:hover{
